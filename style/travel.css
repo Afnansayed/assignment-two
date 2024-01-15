@@ -84,8 +84,8 @@ nav ul li a {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    background-image: url('../images/Rectangle\ 1.png');
-    background-position: 100%;
+    background-image:url('../images/Rectangle\ 1.png');
+    background-position: 100% ;
     border-radius: 1rem;
 }
 
