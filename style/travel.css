@@ -483,6 +483,37 @@ nav ul li a {
     text-align: center;
     margin: 10px;
 }
+/* cox bazar */
+.cox-bazar{
+    margin-top: 50px;
+}
+.cox-title{
+  color: #040303;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 800;
+  margin: 30px 0;
+}
+.cox-images{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.cox-images img{
+    width: 100%;
+}
+.about-cox{
+    color: #424247;
+    padding: 20px;
+    text-align: justify;
+    font-weight: 400;
+}
+.cox-images .about-cox span {
+    color: #FF5400;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: #040303;
+}
 
 /* footer section style */
 .footer {
@@ -641,6 +672,13 @@ nav ul li a {
     }
     .deal-content .price {
         margin-bottom: 0;
+    }
+
+    .cox-images{
+        grid-template-columns: 1fr;
+    }
+    .cox-title{
+        margin-top: 0;
     }
  
 
