@@ -30,7 +30,11 @@ p {
     max-width: 1100px;
     margin: 0 auto;
 }
-
+body{
+    width: 100%;
+    max-width: 1470px;
+    margin: 0 auto;
+}
 
 /* header style */
 header {
@@ -78,14 +82,14 @@ nav ul li a {
 /* banner style */
 .banner {
     margin-top: 50px;
-}
+    }
 
 .banner .container {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    background-image:url('../Images/Group\ 13\ \(1\)\ \(1\).png');
-    background-position: 100% ;
+    background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-position: 100%;
     border-radius: 1rem;
 }
 
@@ -93,7 +97,7 @@ nav ul li a {
     color: #FFF;
     font-size: 4rem;
     font-weight: 800;
-    text-shadow:10px rgba(10, 10, 187, 0.7);
+    text-shadow: 10px rgba(10, 10, 187, 0.7);
     margin-top: 6rem;
     padding-top: 70px;
 
@@ -103,7 +107,7 @@ nav ul li a {
     width: 676px;
     color: #FFF;
     margin: 1.5rem auto;
-    text-shadow:18px rgba(10, 10, 187, 0.7);
+    text-shadow: 18px rgba(10, 10, 187, 0.7);
 }
 
 .container .from {
@@ -156,23 +160,135 @@ nav ul li a {
     color: rgba(19, 19, 24, 0.70);
     margin-bottom: 20px;
 }
-.popular-tour-type{
+
+.popular-tour-type {
     margin: 1.5rem;
     color: rgba(19, 19, 24, 0.70);
     font-weight: 400;
 }
-.popular-tour-content .btn-primary{
+
+.popular-tour-content .btn-primary {
     margin-top: 3rem;
     width: 180px;
 }
-.popular-image img{
+
+.popular-image img {
     width: 100%;
 }
+
 /* detination style */
 
+
+/* why choose us style */
+.choose {
+    margin-top: 50px;
+}
+.choose-style {
+    color: #131318;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.choose-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: justify;
+}
+
+.choose-content img {
+    width: 64px;
+    height: 64px;
+    margin: 30px;
+}
+
+.choose-content h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0 30px;
+}
+
+.choose-content p {
+    color: #5A5A5D;
+    font-weight: 400;
+    margin: 30px;
+}
+
+.choose-hotel {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-service {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-price {
+    width: 50%;
+    grid-column: span 2;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+
+}
+
+/* mountain sty7le */
+.mountain {
+    margin-top: 50px;
+}
+
+.mountain .common-container {
+    display: flex;
+    gap: 20px;
+}
+.mountain-contant{
+    width: 50%;
+}
+
+.mountaintitle {
+    color: #131318;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.mountain-description{
+    color: #5A5A5D;
+    margin-bottom: 30px;
+}
+.mountain-feture{
+    margin-left: 50px;
+    text-align: justify;
+    color: #131318;
+    font-weight: 700;
+}
+.mountain-contant .btn-primary {
+    margin: 35px 0;
+    width: 150px;
+}
+.mountain-vedio{
+    width: 50%;
+}
+.mountain-vedio video{
+    width:100%;
+}
 /* smaller device */
 @media screen and (max-width : 600px) {
-    nav,.popular-tour .common-container {
+
+    nav,
+    .popular-tour .common-container {
         flex-direction: column;
         gap: 20px;
     }
@@ -204,5 +320,35 @@ nav ul li a {
         gap: 10px;
         justify-content: center;
     }
-      
+
+    .choose-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .choose-price {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .choose-description {
+        width: 100%;
+    }
+    .mountain .common-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mountain-contant{
+        width: 100%;
+    }
+    .mountaintitle{
+        font-size: 20px;
+    }
+    .mountaintitle{
+        margin-left: 5px;
+    }
+    .mountain-vedio{
+        width: 100%;
+    }
+    
+
 }
